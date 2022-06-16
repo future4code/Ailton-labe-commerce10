@@ -1,11 +1,10 @@
-import React from 'react';
-import styled from 'styled-components'
+
+import React from 'react'
 
 class App extends React.Component {
-  render() {
-    return (
-      <div>E Commerce :P</div>
-    );
+	render() {
+		return <div>E Commerce :P</div>
+	}
 }
-}
-export default App;
+
+export default App
