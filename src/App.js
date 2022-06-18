@@ -1,4 +1,3 @@
-
 import React from 'react'
 import styled from 'styled-components'
 
@@ -31,10 +30,10 @@ const ContainerProdutoIndividual = styled.div`
 	border: 1px solid black;
 `
 const ImagemProdutos = styled.img`
-    height: 50%;
+	height: 50%;
 	width: 100%;
 `
-    
+
 const ContainerProdutoIndividual2 = styled.div`
 	border: 1px solid black;
 `
@@ -82,40 +81,79 @@ class App extends React.Component {
 					<ContainerProdutos>
 						<ContainerProdutoIndividual>
 							<ImagemProdutos src='https://cdnsjengenhariae.nuneshost.com/wp-content/uploads/2015/11/Saturno-V-3.jpg' />
-							<p><h3> Saturno V </h3></p>
-							<p>O Saturno 5 ou Saturn V, foi um foguete americano usado nas missões Apollo e Skylab. Foi desenvolvido por Wernher von Braun no Marshall Space Flight Center em Huntsville, Alabama juntamente com Boeing, North American Aviation, Douglas Aircraft Company sob coordenação da IBM</p>
-							<p><h4> Valor 0.000.000,00</h4> </p>
+							<p>
+								<h3> Saturno V </h3>
+							</p>
+							<p>
+								O Saturno 5 ou Saturn V, foi um foguete americano usado nas
+								missões Apollo e Skylab. Foi desenvolvido por Wernher von Braun
+								no Marshall Space Flight Center em Huntsville, Alabama
+								juntamente com Boeing, North American Aviation, Douglas Aircraft
+								Company sob coordenação da IBM
+							</p>
+							<p>
+								<h4> Valor 0.000.000,00</h4>{' '}
+							</p>
 							<button>Adicionar produto</button>
 						</ContainerProdutoIndividual>
 
 						<ContainerProdutoIndividual>
 							<ImagemProdutos src='' />
-							<p><h3> Produto </h3></p>
-							<p>Quis quis qui voluptate eiusmod dolor fugiat adipisicing non est.</p>
-							<p><h4> Valor 0.000.000,00</h4> </p>
+							<p>
+								<h3> Produto </h3>
+							</p>
+							<p>
+								Quis quis qui voluptate eiusmod dolor fugiat adipisicing non
+								est.
+							</p>
+							<p>
+								<h4> Valor 0.000.000,00</h4>{' '}
+							</p>
 							<button>Adicionar produto</button>
 						</ContainerProdutoIndividual>
 
 						<ContainerProdutoIndividual>
 							<ImagemProdutos src='https://mundoconectado.com.br/uploads/2021/01/04/16843/xemu.jpg' />
-							<p><h3> Traje Espacial </h3></p>
-							<p>Um traje espacial é um sistema complexo de vestimentas, equipamentos e sistemas ambientais projetados para manter uma pessoa viva e confortável no extremo e perigoso ambiente do espaço exterior.</p>
-							<p><h4> Valor 0.000.000,00</h4> </p>
+							<p>
+								<h3> Traje Espacial </h3>
+							</p>
+							<p>
+								Um traje espacial é um sistema complexo de vestimentas,
+								equipamentos e sistemas ambientais projetados para manter uma
+								pessoa viva e confortável no extremo e perigoso ambiente do
+								espaço exterior.
+							</p>
+							<p>
+								<h4> Valor 0.000.000,00</h4>{' '}
+							</p>
 							<button>Adicionar produto</button>
 						</ContainerProdutoIndividual>
-						
+
 						<ContainerProdutoIndividual2>
 							<ImagemProdutos src='https://img.olhardigital.com.br/uploads/acervo_imagens/2019/07/20190720023219.jpg' />
-							<p><h3> Modulo lunar </h3></p>
-							<p> O Módulo Lunar Apollo foi parte da nave usada no Projeto Apollo. Ele possuía formato de "aranha", e servia para a descida no solo lunar e para o regresso a órbita da Lua para o encontro com os outros dois módulos que lá permaneciam em órbita (Módulo de Comando e Serviço Apollo). </p>
-							<p><h4> Valor 0.000.000,00</h4> </p>
+							<p>
+								<h3> Modulo lunar </h3>
+							</p>
+							<p>
+								{' '}
+								O Módulo Lunar Apollo foi parte da nave usada no Projeto Apollo.
+								Ele possuía formato de "aranha", e servia para a descida no solo
+								lunar e para o regresso a órbita da Lua para o encontro com os
+								outros dois módulos que lá permaneciam em órbita (Módulo de
+								Comando e Serviço Apollo).{' '}
+							</p>
+							<p>
+								<h4> Valor 0.000.000,00</h4>{' '}
+							</p>
 							<button>Adicionar produto</button>
-							
 						</ContainerProdutoIndividual2>
 					</ContainerProdutos>
 					<InputContainerCarrinho>
 						<ConteinerCarrinho>
-							<img src='https://cdn-icons-png.flaticon.com/512/6745/6745169.png' width={30}></img>
+							<img
+								src='https://cdn-icons-png.flaticon.com/512/6745/6745169.png'
+								width={30}
+							></img>
 							<h2>Carrinho:</h2>
 							<p>Valor total:</p>
 						</ConteinerCarrinho>
