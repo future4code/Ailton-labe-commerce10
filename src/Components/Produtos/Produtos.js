@@ -7,17 +7,17 @@ export default class Produtos extends React.Component {
 		return (
 			<div>
 				<HeaderProdudo>
-					<div>
-						<p>teste</p>
-					</div>
 					<Ordem>
-						<label></label>
+						<p>Quantidade de produtos: {this.props.produto.length}</p>
 						<select>
 							<option>opçao 1</option>
 							<option>opçao 2</option>
 						</select>
 					</Ordem>
-					<CardProdutos />
+					<CardProdutos
+						produto={this.props.produto}
+						addCarrinho={this.props.addCarrinho}
+					/>
 				</HeaderProdudo>
 			</div>
 		)

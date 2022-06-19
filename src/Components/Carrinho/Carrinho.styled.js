@@ -12,4 +12,8 @@ export const InputContainerCarrinho = styled.div`
 export const ContainerCarrinho = styled.div`
 	margin-left: 22px;
 	margin-right: 30px;
+	border: 1px solid black;
+	img {
+		width: 60px;
+	}
 `

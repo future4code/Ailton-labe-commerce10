@@ -74,33 +74,51 @@ class App extends React.Component {
 			{
 				id: 1,
 				name: 'Foguete da Missão Apollo 11',
-				value: 10000.0,
+				value: 100,
 				imageUrl: 'https://picsum.photos/200/200',
 			},
 			{
 				id: 2,
-				name: 'Foguete da Missão Apollo 13',
-				value: 10000.0,
+				name: ' Apollo 13',
+				value: 40,
 				imageUrl: 'https://picsum.photos/200/200',
 			},
 			{
 				id: 3,
-				name: 'Foguete da Missão Apollo 13',
-				value: 10000.0,
+				name: 'Foguete',
+				value: 20,
 				imageUrl: 'https://picsum.photos/200/200',
 			},
 		],
+		carrinho: [],
+	}
+	addCarrinho = (id) => {
+		const adicionaCarrinho = this.state.listaProdutos.filter((item) => {
+			return item.id === id
+		})
+		const armazenaCarrinho = [...this.state.carrinho, adicionaCarrinho[0]]
+		this.setState({ carrinho: armazenaCarrinho })
+	}
+	removerProduto = (indice) => {
+		const removeProduto = this.state.carrinho.filter((item, posicao) => {
+			return posicao !== indice
+		})
+		this.setState({ carrinho: removeProduto })
 	}
 	render() {
-		// addCarrinho = () => {}
-
 		return (
 			<div>
 				<Header />
 				<Main>
 					<Filtros />
-					<Produtos produto={this.state.listaProdutos} />
-					<Carrinho />
+					<Produtos
+						produto={this.state.listaProdutos}
+						addCarrinho={this.addCarrinho}
+					/>
+					<Carrinho
+						listaCarrinho={this.state.carrinho}
+						removerProduto={this.removerProduto}
+					/>
 				</Main>
 				<Footer />
 			</div>
