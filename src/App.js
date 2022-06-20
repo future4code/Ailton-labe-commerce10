@@ -199,8 +199,10 @@ class App extends React.Component {
 			},
 		],
 		carrinho: [],
+		order:"cresc"
 	}
-	addCarrinho = (id) => {
+
+ 	addCarrinho = (id) => {
 		const adicionaCarrinho = this.state.listaProdutos.filter((item) => {
 			return item.id === id
 		})
@@ -221,6 +223,7 @@ class App extends React.Component {
 					<Filtros />
 					<Produtos
 						produto={this.state.listaProdutos}
+						ordernar={this.state.order}
 						addCarrinho={this.addCarrinho}
 					/>
 					<Carrinho
