@@ -6,13 +6,14 @@ import {
 } from './CardProdutos.styled'
 
 export default class CardProdutos extends React.Component {
+	
 	render() {
 		const arrayProdutos = this.props.produto.map((dados) => {
 			return (
 				<ContainerProdutoIndividual key={dados.id}>
 					<ImagemProdutos src={dados.imageUrl} />
-					<h2>{dados.name}</h2>
-					<h3>Valor: {dados.value}</h3>
+					<h4>{dados.name}</h4>
+					<h1>$ {dados.value}</h1>
 					<button
 						onClick={() => {
 							this.props.addCarrinho(dados.id)
