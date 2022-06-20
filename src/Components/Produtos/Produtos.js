@@ -10,8 +10,8 @@ export default class Produtos extends React.Component {
 					<Ordem>
 						<p>Quantidade de produtos: {this.props.produto.length}</p>
 						<select>
-							<option>opçao 1</option>
-							<option>opçao 2</option>
+							<option>Crescente</option>
+							<option>Decrescente</option>
 						</select>
 					</Ordem>
 					<CardProdutos
