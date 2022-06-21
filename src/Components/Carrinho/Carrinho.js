@@ -25,7 +25,7 @@ export default class Carrinho extends React.Component {
 		})
 		return (
 			<InputContainerCarrinho>
-				<h2>Carrinho:</h2>
+				<h3>Carrinho:</h3>
 				<h3>Valor total: {soma}</h3>
 				{arrayCarrinho}
 			</InputContainerCarrinho>

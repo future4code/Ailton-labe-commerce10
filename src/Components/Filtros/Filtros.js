@@ -5,12 +5,10 @@ export default class Filtros extends React.Component {
 	render() {
 		return (
 			<ContainerFiltrosInterno>
-				<h2>Filtros</h2>
+				<h3>Filtros</h3>
 				<p>Valor minimo:</p>
 				<InputFiltros></InputFiltros>
 				<p>Valor máximo:</p>
-				<InputFiltros></InputFiltros>
-				<p>buscar por nome:</p>
 				<InputFiltros></InputFiltros>
 			</ContainerFiltrosInterno>
 		)
