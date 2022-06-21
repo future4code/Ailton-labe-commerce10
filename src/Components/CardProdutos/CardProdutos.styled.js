@@ -10,11 +10,13 @@ export const ContainerProdutos = styled.div`
 	column-gap: 15px;
 	row-gap: 20px;
 	color: #04000b;
-
+	
 button:hover {
-	background-color:#551a82;
-	color: white;
-	border: white;
+	/* color: white; */
+	font-size:14px;	
+	transition: all ease 0.3s;
+	/* border: white; */
+	box-shadow: 0 0 1em #551a82;
 }
 
 `

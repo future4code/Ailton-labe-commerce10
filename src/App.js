@@ -97,7 +97,7 @@ class App extends React.Component {
 			},
 			{
 				id: 5,
-				name: 'Pelucias Estronalticas Kids Lunatics',
+				name: 'Pelucias Astronalticas Kids Lunatics',
 				value: 1500,
 				imageUrl: 'https://ae01.alicdn.com/kf/Hc9b34e5ddccc456eb69c7404cff01e00u/Brinquedo-de-pel-cia-astronauta-e-nave-espacial-recheado-macio-tipo-fic-o-cient-fica-boneca.jpg_Q90.jpg_.webp',
 			},
